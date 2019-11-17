@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Bold.otf">
+            <string>SFProText-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="RNo-dZ-fQN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_theme" translatesAutoresizingMaskIntoConstraints="NO" id="p5A-At-jgt">
+                                <rect key="frame" x="132" y="373" width="150" height="150"/>
+                                <color key="tintColor" red="0.38264888530000002" green="0.22956138849999999" blue="0.56081336739999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="4sq-m1-Ku1"/>
+                                    <constraint firstAttribute="height" constant="150" id="l61-vl-iQz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAf-ai-D2r">
+                                <rect key="frame" x="207" y="546" width="0.0" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="kkr-tj-eKo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45882352939999999" green="0.1176470588" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KAf-ai-D2r" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4a8-UN-cGl"/>
+                            <constraint firstItem="RNo-dZ-fQN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8bX-zO-E7P"/>
+                            <constraint firstItem="KAf-ai-D2r" firstAttribute="top" secondItem="p5A-At-jgt" secondAttribute="bottom" constant="23" id="DsK-0k-25q"/>
+                            <constraint firstItem="p5A-At-jgt" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="OFA-H3-UD4"/>
+                            <constraint firstItem="RNo-dZ-fQN" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Qh7-JC-QhU"/>
+                            <constraint firstAttribute="bottom" secondItem="RNo-dZ-fQN" secondAttribute="bottom" id="ZgE-mL-xGN"/>
+                            <constraint firstItem="RNo-dZ-fQN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mvc-Ul-C7G"/>
+                            <constraint firstItem="p5A-At-jgt" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="t5h-vS-Wbt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="49.275362318840585" y="373.66071428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="1824" height="2736"/>
+        <image name="logo_theme" width="128" height="128"/>
+    </resources>
+</document>
